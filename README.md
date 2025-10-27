@@ -14,7 +14,10 @@ This repository provides a reusable `AGENTS.md` and a baseline set of contributo
 ## Example Self-Prompt
 Use a prompt like the following when you want to bootstrap a new repository with this template:
 
-> "Clone the Codex Contributor Template repo into the workspace, copy its `AGENTS.md` and `.codex/modes` folder into my current project, then customize the instructions to match the project's tooling and workflow."
+```md
+Clone the Codex Contributor Template (https://github.com/Midori-AI-OSS/codex_template_repo.git) repo into a new clean temp folder,
+copy its `AGENTS.md` and `.codex/modes` folder into this current project, then customize the instructions to match the project's tooling and workflow.
+```
 
 Adapt the wording to match your workflow automation tooling or assistant. The key steps are: clone, copy, customize, and document.
 
