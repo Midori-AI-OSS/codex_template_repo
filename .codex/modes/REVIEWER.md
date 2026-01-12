@@ -1,19 +1,19 @@
 # Reviewer Mode
 
-> **Note:** Save review notes in `.codex/reviews/` at the repository root or within the relevant service directory. Use unique filename prefixes (for example, generate a short hex string with `openssl rand -hex 4`) such as `abcd1234-review-note.md`.
+> **Note:** Save review notes in `/tmp/agents-artifacts/` (automatically created during task execution). Use unique filename prefixes (for example, generate a short hex string with `openssl rand -hex 4`) such as `abcd1234-review-note.md`.
 
 ## Purpose
 Reviewers audit documentation to keep it accurate and current. They identify missing guidance, outdated steps, and unclear instructions, then hand off actionable follow-up work to Task Masters and Coders.
 
 ## Guidelines
 - Do **not** edit production code or documentation directly. Report findings so the appropriate contributor can make the change.
-- Read previous review notes in `.codex/reviews/` before starting a new audit.
+- Verification-first: confirm what the code does before flagging documentation as correct/incorrect.
 - Inspect `.feedback/` folders, planning documents, `.codex/**` instructions, `.github/` workflows, and top-level README files.
 - For every discrepancy, create a `TMT-<hash>-<description>.md` task file in `.codex/tasks/` so the Task Master can prioritize it.
-- Maintain a reviewer cheat sheet (for example, `.codex/notes/reviewer-mode-cheat-sheet.md`) with recurring preferences or reminders from leads.
+- Keep notes minimal and task-scoped; prefer referencing code and docstrings over creating new documentation structures.
 
 ## Typical Actions
-- Add a new hashed review note summarizing findings in `.codex/reviews/`.
+- Add a new hashed review note summarizing findings in `/tmp/agents-artifacts/`.
 - Audit planning documents, notes, and feedback folders for stale content.
 - Check `.codex/` instructions across services for completeness and consistency.
 - Examine `.github/` configuration and automation files for outdated guidance.

@@ -7,8 +7,6 @@ This template provides a baseline set of practices for repositories that use a `
 ## Where to Look for Guidance
 - **`.feedback/`**: Planning notes, priorities, and stakeholder feedback. Treat these files as read-only unless you are explicitly asked to maintain them.
 - **`.codex/`**:
-  - `instructions/`: Process notes, mode-specific guidance, and service-level conventions. Keep these synchronized with the latest decisions.
-  - `implementation/`: Technical documentation that accompanies code changes. Update these files whenever behavior or architecture shifts.
   - Other subfolders (e.g., `tasks/`, `brainstorms/`, `prompts/`) capture active work, ideation, and reusable assets. Follow each folder's README or local `AGENTS.md` for details.
 - **`.github/`**: Automation, workflow configuration, and repository-wide policy files.
 - Additional directories may include their own `AGENTS.md`. Those files take precedence for the directory tree they reside in.
@@ -16,17 +14,17 @@ This template provides a baseline set of practices for repositories that use a `
 ---
 
 ## Development Basics
-- Set up the project's runtime environment before modifying files. Document the preferred toolchain in `.codex/instructions/`.
+- Set up the project's runtime environment before modifying files. Prefer keeping setup instructions close to the code and/or in task notes; avoid long-lived documentation artifacts unless explicitly requested.
 - Verification-first: confirm current behavior in the codebase before changing code; reproduce/confirm the issue (or missing behavior); verify the fix with clear checks.
 - No broad fallbacks: do not add “fallback behavior everywhere”; only add a narrow fallback when the task explicitly requires it, and justify it.
 - No backward compatibility shims by default: do not preserve old code paths “just in case”; only add compatibility layers when the task explicitly requires it.
 - Minimal documentation, minimal logging: prefer reading code and docstrings; do not add docs/logs unless required to diagnose a specific issue or prevent a crash.
 - Do not update `README.md`.
-- Run linters, tests, and any required quality gates that apply to your contribution. Record new commands in `.codex/implementation/` so others can reproduce your results.
+- Run linters, tests, and any required quality gates that apply to your contribution. Record exact commands in the task file so others can reproduce your results.
 - Keep code, configuration, and documentation changes in sync. When you update behavior, review nearby docs for accuracy.
 - Use structured commit messages such as `[TYPE] Concise summary` and keep pull request descriptions short and outcome focused.
 - Break large efforts into reviewable commits or tasks. Reference related issues, design docs, or feedback files directly in your commits and PRs.
-- Respect repository style guides. If none exist yet, document agreed-upon conventions in `.codex/instructions/` and link them here.
+- Respect repository style guides. If none exist yet, update `AGENTS.md` and the relevant mode docs with short, direct rules.
 
 ---
 
@@ -62,6 +60,6 @@ Add or remove modes as needed for your project, and ensure each has a correspond
 
 ## Customizing This Template
 1. Replace placeholder text (like the communication guidance above) with project-specific instructions.
-2. Populate `.codex/tasks/`, `.codex/instructions/`, and `.codex/implementation/` with initial examples so contributors understand expectations.
-3. Document any required tooling, CI commands, or environment setup steps in `README.md` and cross-reference them here.
+2. Populate `.codex/tasks/` with initial examples so contributors understand expectations.
+3. Keep setup and verification steps short, specific, and close to the code and tasks so they do not drift.
 4. Encourage every contributor to read their mode guide and acknowledge updates whenever this file changes.

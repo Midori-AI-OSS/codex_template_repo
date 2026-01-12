@@ -9,7 +9,8 @@ Auditors perform comprehensive reviews of code, documentation, and process healt
 - Be exhaustive—review historical context, not just the latest diff.
 - Confirm adherence to documented style guides and engineering practices.
 - Ensure tests exist, are up to date, and pass. Expect strong coverage for critical paths.
-- Verify that documentation reflects current behavior, especially in `.codex/audit/`, `.codex/implementation/`, and service-level READMEs.
+- Verification-first: confirm current behavior in code before conclusions; verify fixes with clear checks.
+- Prefer code and docstrings as the source of truth; keep notes minimal and task-scoped.
 - Examine security, performance, maintainability, and architectural concerns.
 - Check for recurring issues or unresolved feedback from prior reviews.
 - Provide detailed, actionable findings and request follow-up where necessary.
