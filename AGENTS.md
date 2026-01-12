@@ -16,7 +16,12 @@ This template provides a baseline set of practices for repositories that use a `
 ---
 
 ## Development Basics
-- Set up the project's runtime environment before modifying files. Document the preferred toolchain (package managers, language versions, build tools) in `README.md` or the relevant service instructions.
+- Set up the project's runtime environment before modifying files. Document the preferred toolchain in `.codex/instructions/`.
+- Verification-first: confirm current behavior in the codebase before changing code; reproduce/confirm the issue (or missing behavior); verify the fix with clear checks.
+- No broad fallbacks: do not add “fallback behavior everywhere”; only add a narrow fallback when the task explicitly requires it, and justify it.
+- No backward compatibility shims by default: do not preserve old code paths “just in case”; only add compatibility layers when the task explicitly requires it.
+- Minimal documentation, minimal logging: prefer reading code and docstrings; do not add docs/logs unless required to diagnose a specific issue or prevent a crash.
+- Do not update `README.md`.
 - Run linters, tests, and any required quality gates that apply to your contribution. Record new commands in `.codex/implementation/` so others can reproduce your results.
 - Keep code, configuration, and documentation changes in sync. When you update behavior, review nearby docs for accuracy.
 - Use structured commit messages such as `[TYPE] Concise summary` and keep pull request descriptions short and outcome focused.
