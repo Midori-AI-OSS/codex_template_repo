@@ -3,7 +3,7 @@
 This repository provides a reusable `AGENTS.md` and a baseline set of contributor mode guides under `.agents/modes/`. Copy these files into a new project to bootstrap consistent collaboration workflows without inheriting project-specific tooling rules.
 
 ## How to Use This Template
-1. Create or choose the target repository you want to prepare for Codex-style collaboration.
+1. Create or choose the target repository you want to prepare for Agents-style collaboration.
 2. Clone that repository locally.
 3. Copy `AGENTS.md` from this template into the root of the target repository.
 4. Copy the `.agents/modes/` directory into the target repository (create `.agents/` first if it does not exist).
@@ -15,7 +15,7 @@ This repository provides a reusable `AGENTS.md` and a baseline set of contributo
 Use a prompt like the following when you want to bootstrap a new repository with this template:
 
 ```md
-Clone the Codex Contributor Template (https://github.com/Midori-AI-OSS/codex_template_repo.git) repo into a new clean temp folder,
+Clone the Agents Contributor Template (https://github.com/Midori-AI-OSS/agents_template.git) repo into a new clean temp folder,
 copy its `AGENTS.md` and `.agents/modes` folder into this current project, then customize the instructions to match the project's tooling and workflow.
 ```
 
