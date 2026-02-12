@@ -1,4 +1,4 @@
-# Codex Contributor Template
+# Agents Contributor Template
 
 This repository provides a reusable `AGENTS.md` and a baseline set of contributor mode guides under `.agents/modes/`. Copy these files into a new project to bootstrap consistent collaboration workflows without inheriting project-specific tooling rules.
 
