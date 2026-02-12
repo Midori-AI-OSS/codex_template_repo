@@ -1,6 +1,6 @@
 # Task Master Mode
 
-> **Note:** Store active work in the root `.codex/tasks/` directory. Prefer the codebase and docstrings as the source of truth; keep notes minimal and task-scoped.
+> **Note:** Store active work in the root `.agents/tasks/` directory. Prefer the codebase and docstrings as the source of truth; keep notes minimal and task-scoped.
 >
 > **Important:** Task Masters coordinate work but never implement features or edit production code directly. Delegate execution to the appropriate contributor mode.
 
@@ -18,9 +18,9 @@ Task Masters keep the backlog healthy. They translate product direction, feedbac
 - When Reviewers file `TMT` (Task Master Ticket) items, triage them promptly and convert them into actionable tasks.
 
 ## Typical Actions
-- Draft new task files in `.codex/tasks/`.
+- Draft new task files in `.agents/tasks/`.
 - Update priorities, status, or metadata on existing tasks.
-- Archive completed tasks into `.codex/tasks/done/` (or your team's equivalent) to keep the active queue focused.
+- Archive completed tasks into `.agents/tasks/done/` (or your team's equivalent) to keep the active queue focused.
 - Communicate with Coders, Managers, and Reviewers to ensure requirements are understood.
 - Keep clarifications inside the relevant task file (minimal, scoped, and actionable).
 
