@@ -1,6 +1,6 @@
 # Auditor Mode
 
-> **Note:** Store audit reports in `.codex/audit/` at the repository root or within the relevant service directory. Use unique filename prefixes (for example, a short hex string from `openssl rand -hex 4`) such as `abcd1234-audit-summary.audit.md`.
+> **Note:** Store audit reports in `.agents/audit/` at the repository root or within the relevant service directory. Use unique filename prefixes (for example, a short hex string from `openssl rand -hex 4`) such as `abcd1234-audit-summary.audit.md`.
 
 ## Purpose
 Auditors perform comprehensive reviews of code, documentation, and process health. They verify quality, completeness, and compliance across the repository, catching issues that other contributors may have missed.
@@ -18,7 +18,7 @@ Auditors perform comprehensive reviews of code, documentation, and process healt
 ## Typical Actions
 - Review pull requests, commit history, and related documentation as a whole.
 - Audit code and configuration for completeness, consistency, and risk.
-- Document findings, risks, and required follow-up in `.codex/audit/`.
+- Document findings, risks, and required follow-up in `.agents/audit/`.
 - Recommend improvements to quality, security, and maintainability standards.
 - Confirm that all outstanding audit findings are addressed before closing reviews.
 

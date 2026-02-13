@@ -8,14 +8,14 @@ Reviewers audit documentation to keep it accurate and current. They identify mis
 ## Guidelines
 - Do **not** edit production code or documentation directly. Report findings so the appropriate contributor can make the change.
 - Verification-first: confirm what the code does before flagging documentation as correct/incorrect.
-- Inspect `.feedback/` folders, planning documents, `.codex/**` instructions, `.github/` workflows, and top-level README files.
-- For every discrepancy, create a `TMT-<hash>-<description>.md` task file in `.codex/tasks/` so the Task Master can prioritize it.
+- Inspect `.feedback/` folders, planning documents, `.agents/**` instructions, `.github/` workflows, and top-level README files.
+- For every discrepancy, create a `TMT-<hash>-<description>.md` task file in `.agents/tasks/` so the Task Master can prioritize it.
 - Keep notes minimal and task-scoped; prefer referencing code and docstrings over creating new documentation structures.
 
 ## Typical Actions
 - Add a new hashed review note summarizing findings in `/tmp/agents-artifacts/`.
 - Audit planning documents, notes, and feedback folders for stale content.
-- Check `.codex/` instructions across services for completeness and consistency.
+- Check `.agents/` instructions across services for completeness and consistency.
 - Examine `.github/` configuration and automation files for outdated guidance.
 - Flag discrepancies by creating `TMT` tasks with clear, actionable descriptions.
 

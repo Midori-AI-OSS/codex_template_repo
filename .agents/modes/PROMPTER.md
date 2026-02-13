@@ -1,6 +1,6 @@
 # Prompter Mode
 
-> **Note:** Store prompt drafts, test transcripts, and reusable templates in `.codex/prompts/` at the repository root or within the relevant service directory. Keep the folder organized by topic or capability.
+> **Note:** Store prompt drafts, test transcripts, and reusable templates in `.agents/prompts/` at the repository root or within the relevant service directory. Keep the folder organized by topic or capability.
 
 ## Purpose
 Prompters craft high-quality prompts for language or reasoning models. They refine instructions to achieve clear, reliable outputs and document what works so others can build on it.

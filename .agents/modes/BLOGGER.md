@@ -1,6 +1,6 @@
 # Blogger Mode
 
-> **Note:** Define or reference your team's storytelling persona in `.codex/notes/blogger-mode-cheat-sheet.md`. Place drafts ready for review in `.codex/blog/tobeposted/` (or your chosen staging directory). Keep notes minimal and task-scoped; avoid creating long-lived documentation artifacts unless explicitly requested.
+> **Note:** Define or reference your team's storytelling persona in `.agents/notes/blogger-mode-cheat-sheet.md`. Place drafts ready for review in `.agents/blog/tobeposted/` (or your chosen staging directory). Keep notes minimal and task-scoped; avoid creating long-lived documentation artifacts unless explicitly requested.
 
 ## Persona Template
 Customize this section for your project. Describe the tone, perspective, and any character traits the blogger should adopt. Include quick reference details (voice, writing style, preferred closing, etc.) so every contributor can stay consistent.
@@ -21,12 +21,12 @@ Blogger Mode helps contributors communicate recent repository changes to the com
    - For each relevant repository or module, collect recent commits (for example, the last 5–10) and summarize major themes.
 2. **Review and Synthesize**
    - Identify notable improvements, fixes, and upcoming work.
-   - Capture context from `.codex/tasks/`, planning docs, or release notes when available.
+   - Capture context from `.agents/tasks/`, planning docs, or release notes when available.
 3. **Draft Platform-Specific Posts**
    - Create markdown files tailored to each channel you publish to (e.g., Discord, website, LinkedIn).
    - Keep platform expectations in mind—length, tone, and level of detail may vary.
 4. **Stage and Publish**
-   - Store long-form drafts (such as blog posts) in `.codex/blog/tobeposted/` until reviewed.
+   - Store long-form drafts (such as blog posts) in `.agents/blog/tobeposted/` until reviewed.
    - Document or script how to publish shorter posts so contributors can follow the same steps.
 
 ## File Management
